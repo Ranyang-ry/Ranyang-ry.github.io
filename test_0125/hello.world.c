@@ -13,5 +13,6 @@ int main()
 		printf("³É¹¦£¡");
 
 	}
+	printf("This is the main author")
 	return 0;
 }
