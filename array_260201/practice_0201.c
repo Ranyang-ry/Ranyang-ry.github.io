@@ -1,5 +1,5 @@
-#define _CRT_SECURE_NO_WARNINGS 1
-#include<stdio.h>
+//#define _CRT_SECURE_NO_WARNINGS 1
+//#include<stdio.h>
 //int main() {
 //	//数组的创建：
 //	// 
@@ -95,16 +95,16 @@
 //二维数组存储地址也是连续的
 
 //变长数组：VLA
-int main()
-{
-	int n;
-	scanf("%d", &n);
-	int arr2[n];
-	for (int i = 0; i < n; i++) {
-		scanf("%d", &arr2[i]);
-	}
-	for (int i = 0; i < n; i++) {
-		printf("%d ", arr2[i]);
-	}
-	return 0;
-}
+//int main()
+//{
+//	int n;
+//	scanf("%d", &n);
+//	int arr2[n];
+//	for (int i = 0; i < n; i++) {
+//		scanf("%d", &arr2[i]);
+//	}
+//	for (int i = 0; i < n; i++) {
+//		printf("%d ", arr2[i]);
+//	}
+//	return 0;
+//}
