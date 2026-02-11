@@ -1,4 +1,4 @@
-#define  _CRT_SECURE_NO_WARNINGS
+#define _CRT_SECURE_NO_WARNINGS 1
 #include<stdio.h>
 //int main() {
 //	//数组的创建：
@@ -47,17 +47,64 @@
 //	return 0;
 //}
 //错误：数组的下标从零开始。：
+//从零开始的数组初始化以及打印
+
+//int main()
+//{
+//	int arr1[3][5] = { 1,2,3,4,5, 2,3,4,5,6, 3,4,5,6,7 };
+//	int i, j;
+//	for (i = 0; i < 3; i++) //产生行号
+//	{
+//		for (j = 0; j < 5; j++) //产生列号
+//		{
+//			printf("%d ", arr1[i][j]);
+//		}
+//		printf("\n");
+//	}
+//	return 0;
+//}
+//int main()
+//{
+//	int arr2[3][5] = { 0 };
+//	for (int i = 0; i < 3; i++) 
+//	{
+//		for (int j = 0; j < 5; j++) 
+//		{
+//			scanf("%d", &arr2[i][j]);
+//		}
+//	}
+//	for (int i = 0; i < 3; i++)
+//	{
+//		for (int j = 0; j < 5; j++)
+//		{
+//			printf("%d ", arr2[i][j]);
+//		}
+//		printf("\n");
+//	}
+//	//换行输出：
+//	for (int i = 0; i < 5; i++)
+//	{
+//		for (int j = 0; j < 3; j++)
+//		{
+//			printf("%d ", arr2[j][i]);
+//		}
+//		printf("\n");
+//	}
+//		return 0;
+//}
+//二维数组存储地址也是连续的
+
+//变长数组：VLA
 int main()
 {
-	int arr1[3][5] = { 1,2,3,4,5, 2,3,4,5,6, 3,4,5,6,7 };
-	int i, j;
-	for (i = 0; i < 3; i++) //产生行号
-	{
-		for (j = 0; j < 5; j++) //产生列号
-		{
-			printf("%d ", arr1[i][j]);
-		}
-		printf("\n");
+	int n;
+	scanf("%d", &n);
+	int arr2[n];
+	for (int i = 0; i < n; i++) {
+		scanf("%d", &arr2[i]);
+	}
+	for (int i = 0; i < n; i++) {
+		printf("%d ", arr2[i]);
 	}
 	return 0;
 }
